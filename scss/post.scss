@@ -158,7 +158,10 @@ a.list-group-item {
     color: $white;
   }
 }
-
+.region_main_settings_menu{
+  z-index: 1;
+  background: $wedgewood;
+}
 //   /**    BREADCRUMBs */
 
 .breadcrumb {

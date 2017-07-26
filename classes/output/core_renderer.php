@@ -75,8 +75,12 @@ class core_renderer extends \core_renderer {
 
         $html = "";
 
+
         $html .= $this->toolbar();
         $html .= $this->toolbarParticipants();
+        $html .= html_writer::start_div('row region_main_settings_menu');
+        $html .= $this->region_main_settings_menu();
+        $html .= html_writer::end_div();
         // $html = html_writer::start_tag('nav', array('id' => 'anothernav', 'class' => 'navbar toolbar'));
         //   $pageheadingbutton = $this->page_heading_button();
         // $html .= html_writer::end_tag('nav');
